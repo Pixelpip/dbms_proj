@@ -6,13 +6,13 @@ posts=[
     {
         'author':'Sridhar',
         'title':'Post 1',
-        'Content':'First Post',
+        'content':'First Post',
         'date_posted':'July 28,2024'
     },
     {
         'author':'Unicourt',
         'title':'Post 2',
-        'Content':'Second Post',
+        'content':'Second Post',
         'date_posted':'July 29,2024'
     }
 ]
@@ -24,8 +24,7 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html',title='About')
+    return render_template('about.html',title="About")
 
-
-if __name__=='__main__':
+if __name__ == "__main__":
     app.run(debug=True)
